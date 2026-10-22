@@ -1,0 +1,5 @@
+# System & Office temp files
+~$*.docx
+Thumbs.db
+.DS_Store
+*.log

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Сторінку не знайдено | Костянтин Олійник</title>
+  
+  <meta name="description" content="Сторінку не знайдено — сайт-портфоліо Костянтина Олійника">
+  <meta name="author" content="Костянтин Олійник">
+
+  <!-- Inter & JetBrains Mono Fonts via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Lights -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">KO</div>
+        <span>Kostiantyn Oliinyk</span>
+      </a>
+
+      <!-- Action Buttons (Language & Theme Toggle) -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button id="lang-toggle-btn" class="btn-control lang-btn" aria-label="Toggle language">
+          <span id="lang-flag" class="lang-flag">🇺🇦</span>
+          <span id="lang-label">УКР</span>
+        </button>
+
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle-btn" class="btn-control" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Error Section -->
+  <main class="error-page">
+    <div class="container" style="display: flex; justify-content: center;">
+      <div class="error-card">
+        <div class="error-icon">🎣</div>
+        <div class="error-code">404</div>
+        <span class="section-badge" data-i18n="pageNotFoundBadge">Помилка 404</span>
+        <h1 class="error-title" data-i18n="pageNotFoundTitle">Сторінку не знайдено</h1>
+        <p class="error-desc" data-i18n="pageNotFoundDesc">
+          Схоже, цей маршрут закинув вудку не туди. Сторінки не існує, або вона була переміщена. Перевірте адресу або поверніться на головну.
+        </p>
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary" data-i18n="btnBackHome">← Повернутися на головну</a>
+          <a href="index.html#projects" class="btn btn-secondary" data-i18n="btnProjects">Переглянути проєкти</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copy">
+          © 2026 Костянтин Олійник (Kostiantyn Oliinyk). <span data-i18n="footerRights">Всі права захищено.</span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#projects" data-i18n="navProjects">Проєкти</a></li>
+          <li><a href="mailto:kn1b24.oliinyk@kpnu.edu.ua">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

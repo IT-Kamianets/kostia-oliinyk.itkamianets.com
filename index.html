@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Костянтин Олійник | Резюме & Портфоліо</title>
+  
+  <meta name="description" content="Портфоліо та резюме Костянтина Олійника — студента комп'ютерних наук (КПНУ ім. Івана Огієнка), розробника на Python, C++, SQL.">
+  <meta name="author" content="Костянтин Олійник">
+
+  <!-- Inter & JetBrains Mono Fonts via Google Fonts (with system fallbacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Lights -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#about" class="nav-brand">
+        <div class="brand-icon">KO</div>
+        <span>Kostiantyn Oliinyk</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-i18n="navAbout">Про мене</a></li>
+        <li><a href="#philosophy" class="nav-link" data-i18n="navPhilosophy">Філософія</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="navSkills">Навички</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="navProjects">Проєкти</a></li>
+        <li><a href="#education" class="nav-link" data-i18n="navEducation">Освіта</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="navContact">Контакти</a></li>
+      </ul>
+
+      <!-- Action Buttons (Language & Theme Toggle) -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button id="lang-toggle-btn" class="btn-control lang-btn" aria-label="Toggle language">
+          <span id="lang-flag" class="lang-flag">🇺🇦</span>
+          <span id="lang-label">УКР</span>
+        </button>
+
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle-btn" class="btn-control" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+
+        <!-- Mobile Navigation Menu Toggle -->
+        <button id="mobile-toggle" class="mobile-menu-toggle" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" data-i18n="navAbout">Про мене</a></li>
+        <li><a href="#philosophy" data-i18n="navPhilosophy">Філософія</a></li>
+        <li><a href="#skills" data-i18n="navSkills">Навички</a></li>
+        <li><a href="#projects" data-i18n="navProjects">Проєкти</a></li>
+        <li><a href="#education" data-i18n="navEducation">Освіта</a></li>
+        <li><a href="#contact" data-i18n="navContact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Wrap -->
+  <main>
+    <!-- HERO & ABOUT SECTION -->
+    <section id="about" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span data-i18n="heroStatus">Відкритий до проєктів та кар'єрних можливостей</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="heroGreeting">Привіт, я</span><br>
+            <span class="gradient-text" data-i18n="heroName">Костянтин Олійник</span>
+          </h1>
+
+          <div class="hero-subtitle" data-i18n="heroRole">Студент комп'ютерних наук • Junior Software Developer</div>
+
+          <p class="hero-description" data-i18n="heroDesc">
+            Розробник, якого драйвить запуск складних алгоритмів з першого разу та створення охайних, інтуїтивно зрозумілих інтерфейсів. Проєктую чистий та надійний код зі старту.
+          </p>
+
+          <div class="hero-badges-row">
+            <span class="hero-tag" data-i18n="heroBadge1">🎓 КПНУ ім. Івана Огієнка</span>
+            <span class="hero-tag" data-i18n="heroBadge2">💻 Python, C++, SQL</span>
+            <span class="hero-tag" data-i18n="heroBadge3">🛠️ Clean Code & Architecture</span>
+            <span class="hero-tag" data-i18n="heroBadge4">🎣 Спортивна риболовля</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" data-i18n="btnProjects">Переглянути проєкти</a>
+            <button class="btn btn-secondary trigger-print-cv" data-i18n="btnDownloadCV">Завантажити CV (PDF)</button>
+            <a href="#contact" class="btn btn-outline" data-i18n="btnContact">Зв'язатися зі мною</a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Developer Terminal / Code Card -->
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <div class="code-filename">DeveloperProfile.cpp</div>
+            </div>
+            <div class="code-body">
+              <div class="code-comment" data-i18n="codeComment1">// Інженерні пріоритети</div>
+              <div><span class="code-keyword">class</span> <span class="code-class">SoftwareEngineer</span> {</div>
+              <div>&nbsp;&nbsp;<span class="code-keyword">public</span>:</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;std::<span class="code-class">string</span> name = <span class="code-string">"Kostiantyn Oliinyk"</span>;</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;std::<span class="code-class">string</span> university = <span class="code-string">"KPNU (Computer Science)"</span>;</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;std::<span class="code-class">vector</span>&lt;std::<span class="code-class">string</span>&gt; stack = {<span class="code-string">"Python"</span>, <span class="code-string">"C++"</span>, <span class="code-string">"SQL"</span>};</div>
+              <br>
+              <div class="code-comment" data-i18n="codeComment2">// Перевірка готовності системи</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">bool</span> <span class="code-fn">executeComplexAlgorithm</span>() {</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">if</span> (cleanArchitecture &amp;&amp; firstTrySuccess) {</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-var">pureSatisfaction</span>; <span class="code-comment">// true!</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-fn">refineAndOptimize</span>();</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+              <div>};</div>
+            </div>
+          </div>
+
+          <div class="floating-stats-card">
+            <div class="stats-icon">⚡</div>
+            <div class="stats-info">
+              <div class="stats-value" data-i18n="statsHighlightValue">Чистий код & UX</div>
+              <div class="stats-label" data-i18n="statsHighlightLabel">Ключовий фокус розробки</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE MINDSET & PHILOSOPHY SECTION (From Questionnaire Answers) -->
+    <section id="philosophy" class="philosophy-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge" data-i18n="philosophyBadge">Підхід & Принципи</span>
+          <h2 class="section-title" data-i18n="philosophyTitle">Як я мислю та створюю рішення</h2>
+          <p class="section-subtitle" data-i18n="philosophySubtitle">Мої відповіді на виклики програмування: від структури коду до реального користувацького досвіду.</p>
+        </div>
+
+        <div class="philosophy-grid">
+          <!-- Card 1: What Drives Me -->
+          <div class="philosophy-card">
+            <div class="philosophy-icon-wrap">🚀</div>
+            <h3 class="philosophy-title" data-i18n="philDriveTitle">Драйв від алгоритмів та результату</h3>
+            <p class="philosophy-text" data-i18n="philDriveDesc">
+              Найбільше задоволення я отримую, коли з першого разу запускається складний алгоритм, і коли бачу готовий, працюючий та естетичний інтерфейс.
+            </p>
+            <div class="philosophy-quote" data-i18n="philDriveQuote">
+              «Баланс між потужною внутрішньою логікою та бездоганним фасадом.»
+            </div>
+          </div>
+
+          <!-- Card 2: How I Learn -->
+          <div class="philosophy-card green">
+            <div class="philosophy-icon-wrap">📚</div>
+            <h3 class="philosophy-title" data-i18n="philLearnTitle">Дослідження та документація</h3>
+            <p class="philosophy-text" data-i18n="philLearnDesc">
+              Мій шлях у нових технологіях: спочатку читаю офіційну документацію, розбираю туторіали і лише потім переходжу до усвідомленого написання коду.
+            </p>
+            <div class="philosophy-quote" data-i18n="philLearnQuote">
+              «Розуміння архітектури інструменту перед його використанням.»
+            </div>
+          </div>
+
+          <!-- Card 3: Architecture & Perfectionism -->
+          <div class="philosophy-card indigo">
+            <div class="philosophy-icon-wrap">📐</div>
+            <h3 class="philosophy-title" data-i18n="philArchTitle">Чиста структура з самого старту</h3>
+            <p class="philosophy-text" data-i18n="philArchDesc">
+              Прагну одразу проєктувати правильну структуру та чистий код, а при появі нових нюансів — системно та гнучко його вдосконалювати.
+            </p>
+            <div class="philosophy-quote" data-i18n="philArchQuote">
+              «Краще спроєктувати надійно з першого дня, ніж постійно гасити пожежі.»
+            </div>
+          </div>
+
+          <!-- Card 4: UX & Neatness -->
+          <div class="philosophy-card amber">
+            <div class="philosophy-icon-wrap">✨</div>
+            <h3 class="philosophy-title" data-i18n="philUxTitle">Зручність та охайність для людей</h3>
+            <p class="philosophy-text" data-i18n="philUxDesc">
+              Для мене надзвичайно важлива зручність і охайність продукту: адже одне з головних завдань розробника — зробити досвід користувача комфортним.
+            </p>
+            <div class="philosophy-quote" data-i18n="philUxQuote">
+              «Корисна програма має бути простою, охайною та приємною у взаємодії.»
+            </div>
+          </div>
+
+          <!-- Card 5: Life Outside Code -->
+          <div class="philosophy-card purple">
+            <div class="philosophy-icon-wrap">🎣</div>
+            <h3 class="philosophy-title" data-i18n="philHobbyTitle">Риболовля: перезавантаження & терпіння</h3>
+            <p class="philosophy-text" data-i18n="philHobbyDesc">
+              Моє хобі поза кодом — риболовля. Вона допомагає перезавантажити думки, виховує витримку, концентрацію та дарує заряд позитивних емоцій.
+            </p>
+            <div class="philosophy-quote" data-i18n="philHobbyQuote">
+              «Вміння спостерігати, чекати слушного моменту та миттєво реагувати.»
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge" data-i18n="skillsBadge">Технічний стек</span>
+          <h2 class="section-title" data-i18n="skillsTitle">Мови, інструменти та середовища</h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">Стек технологій, з якими я працюю під час навчання в університеті та розробки власних рішень.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Languages Category -->
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3 class="skill-category-title" data-i18n="skillCatLanguages">Мови програмування</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🐍</div>
+                  <div>
+                    <div class="skill-name">Python</div>
+                    <small class="skill-desc" data-i18n="skillPythonDesc">Алгоритми, структури даних, скрипти автоматизації</small>
+                  </div>
+                </div>
+                <span class="skill-tag">Primary</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">⚙️</div>
+                  <div>
+                    <div class="skill-name">C++</div>
+                    <small class="skill-desc" data-i18n="skillCppDesc">Об'єктно-орієнтоване програмування, робота з пам'яттю</small>
+                  </div>
+                </div>
+                <span class="skill-tag">Core</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🗄️</div>
+                  <div>
+                    <div class="skill-name">SQL</div>
+                    <small class="skill-desc" data-i18n="skillSqlDesc">Реляційні БД, запити, проєктування схем, нормалізація</small>
+                  </div>
+                </div>
+                <span class="skill-tag">Data</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & IDEs Category -->
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon">🛠️</span>
+              <h3 class="skill-category-title" data-i18n="skillCatTools">Середовища розробки & БД</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🟦</div>
+                  <div>
+                    <div class="skill-name">VS Code</div>
+                    <small class="skill-desc" data-i18n="skillVsCodeDesc">Основний редактор для щоденної розробки та скриптів</small>
+                  </div>
+                </div>
+                <span class="skill-tag">IDE</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🔴</div>
+                  <div>
+                    <div class="skill-name">JetBrains Rider</div>
+                    <small class="skill-desc" data-i18n="skillRiderDesc">Потужна IDE для проєктування надійної архітектури</small>
+                  </div>
+                </div>
+                <span class="skill-tag">IDE</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🟩</div>
+                  <div>
+                    <div class="skill-name">JetBrains CLion</div>
+                    <small class="skill-desc" data-i18n="skillClionDesc">Професійне середовище для розробки на C/C++</small>
+                  </div>
+                </div>
+                <span class="skill-tag">IDE</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🐬</div>
+                  <div>
+                    <div class="skill-name">phpMyAdmin</div>
+                    <small class="skill-desc" data-i18n="skillPhpMyAdminDesc">Адміністрування баз даних, тестування запитів</small>
+                  </div>
+                </div>
+                <span class="skill-tag">DB Admin</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engineering Concepts -->
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon">🧠</span>
+              <h3 class="skill-category-title" data-i18n="skillCatConcepts">Інженерні концепції</h3>
+            </div>
+            <div class="skill-items-grid">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🎯</div>
+                  <div>
+                    <div class="skill-name">Clean Code & OOP</div>
+                    <small class="skill-desc" data-i18n="skillCleanCodeDesc">Читабельність, модульність, SOLID принципи</small>
+                  </div>
+                </div>
+                <span class="skill-tag">Architecture</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">🧩</div>
+                  <div>
+                    <div class="skill-name">Algorithms & Recursion</div>
+                    <small class="skill-desc" data-i18n="skillAlgoDesc">Рекурсія, оптимізація складності, Flood Fill</small>
+                  </div>
+                </div>
+                <span class="skill-tag">Computer Science</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon">📱</div>
+                  <div>
+                    <div class="skill-name">Hybrid Mobile Apps</div>
+                    <small class="skill-desc" data-i18n="skillHybridDesc">Кросплатформний підхід, реактивні інтерфейси</small>
+                  </div>
+                </div>
+                <span class="skill-tag">Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge" data-i18n="projectsBadge">Портфоліо робіт</span>
+          <h2 class="section-title" data-i18n="projectsTitle">Вибрані проєкти</h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">Курсові та практичні роботи, де реалізовано алгоритмічну логіку та системний дизайн.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Minesweeper (Best Coursework) -->
+          <div class="project-card">
+            <div class="project-banner">
+              <div class="project-banner-decor">💣</div>
+              <span class="project-badge-float" data-i18n="proj1Badge">Найкраща курсова робота</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj1Title">Гра «Сапер» (Classic Minesweeper)</h3>
+              <p class="project-desc" data-i18n="proj1Desc">
+                Повна реалізація класичної логічної гри «Сапер». Особлива увага приділена чистоті коду та алгоритмічній надійності.
+              </p>
+              <ul class="project-features">
+                <li data-i18n="proj1Feat1">Рекурсивний алгоритм відкриття пустих суміжних клітинок (Flood Fill)</li>
+                <li data-i18n="proj1Feat2">Генерація мінного поля із гарантією безпечного першого кліку</li>
+                <li data-i18n="proj1Feat3">Підрахунок сусідніх мін, система прапорців 🚩 та таймер</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">C++ / Python</span>
+                <span class="tech-tag">Flood Fill Algorithm</span>
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">Game Logic</span>
+              </div>
+              <div class="project-actions">
+                <button id="btn-open-minesweeper" class="btn btn-primary btn-sm" data-i18n="btnPlayDemo">Зіграти в Сапера</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Sport Fishing Tournament App (Hybrid Mobile & Personal Passion) -->
+          <div class="project-card">
+            <div class="project-banner">
+              <div class="project-banner-decor">🎣</div>
+              <span class="project-badge-float" data-i18n="proj2Badge">Гібридні мобільні додатки</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj2Title">Мобільний додаток для змагань з риболовного спорту</h3>
+              <p class="project-desc" data-i18n="proj2Desc">
+                Спеціалізована платформа для організації та суддівства турнірів зі спортивної риболовлі, що поєднує моє хобі та мобільну розробку.
+              </p>
+              <ul class="project-features">
+                <li data-i18n="proj2Feat1">Створення окремих кімнат змагань та жива таблиця лідерів</li>
+                <li data-i18n="proj2Feat2">Фотопідтвердження улову на фоні лінійки (довжина) або ваг (вага)</li>
+                <li data-i18n="proj2Feat3">Суддівська перевірка спірних моментів та система дискваліфікації за порушення</li>
+                <li data-i18n="proj2Feat4">Розподіл ролей у системі: Організатор, Суддя, Учасник</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">Hybrid Mobile</span>
+                <span class="tech-tag">SQL & Relational DB</span>
+                <span class="tech-tag">RBAC</span>
+                <span class="tech-tag">Verification Flow</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-secondary btn-sm" data-i18n="btnViewDetails">Деталі архітектури</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Relational Database Architecture -->
+          <div class="project-card">
+            <div class="project-banner">
+              <div class="project-banner-decor">🗃️</div>
+              <span class="project-badge-float" data-i18n="proj3Badge">Бази даних & SQL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" data-i18n="proj3Title">Система управління базою даних (phpMyAdmin / SQL)</h3>
+              <p class="project-desc" data-i18n="proj3Desc">
+                Проєктування та розгортання реляційної структури бази даних для обліку з нормалізацією до 3НФ.
+              </p>
+              <ul class="project-features">
+                <li data-i18n="proj3Feat1">Проєктування схеми даних, зв'язки один-до-багатьох та багато-до-багатьох</li>
+                <li data-i18n="proj3Feat2">Складні аналітичні SQL-запити з об'єднаннями (JOIN, GROUP BY, HAVING)</li>
+                <li data-i18n="proj3Feat3">Індексація для оптимізації швидкодії та адміністрування через phpMyAdmin</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">phpMyAdmin</span>
+                <span class="tech-tag">Data Modeling</span>
+                <span class="tech-tag">Query Optimization</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-secondary btn-sm" data-i18n="btnContact">Зв'язатися</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge" data-i18n="educationBadge">Академічний шлях</span>
+          <h2 class="section-title" data-i18n="educationTitle">Освіта & Кваліфікація</h2>
+          <p class="section-subtitle" data-i18n="educationSubtitle">Фундаментальна підготовка в галузі комп'ютерних наук.</p>
+        </div>
+
+        <div class="education-wrap">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">🎓</div>
+              <div class="timeline-card">
+                <div class="timeline-meta">
+                  <h3 class="timeline-institution" data-i18n="eduUni">Кам'янець-Подільський національний університет імені Івана Огієнка (КПНУ)</h3>
+                  <span class="timeline-period" data-i18n="eduPeriod">2024 — теперішній час</span>
+                </div>
+                <div class="timeline-degree" data-i18n="eduDegree">Бакалавр, спеціальність 122 «Комп'ютерні науки»</div>
+                <p class="timeline-desc" data-i18n="eduDesc">
+                  Поглиблене вивчення алгоритмів, структур даних, об'єктно-орієнтованого програмування, гібридних мобільних додатків, реляційних баз даних та системного проєктування програмного забезпечення.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge" data-i18n="contactBadge">Контакти</span>
+          <h2 class="section-title" data-i18n="contactTitle">Давайте створимо щось чудове разом</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">Завжди відкритий до обговорення цікавих ідей, співпраці та навчальних проєктів.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-content">
+                <span class="contact-card-label" data-i18n="contactEmailLabel">Університетська пошта:</span>
+                <span class="contact-card-val">kn1b24.oliinyk@kpnu.edu.ua</span>
+              </div>
+              <button id="copy-email-btn" class="btn-copy" title="Скопіювати email">📋</button>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-content">
+                <span class="contact-card-label" data-i18n="contactLocationLabel">Місто & Локація:</span>
+                <span class="contact-card-val" data-i18n="contactLocationVal">Кам'янець-Подільський, Україна</span>
+              </div>
+            </div>
+
+            <!-- University Affiliation -->
+            <div class="contact-card">
+              <div class="contact-card-icon">🏛️</div>
+              <div class="contact-card-content">
+                <span class="contact-card-label" data-i18n="contactInstLabel">Навчальний заклад:</span>
+                <span class="contact-card-val" data-i18n="contactInstVal">КПНУ ім. Івана Огієнка (Комп'ютерні науки)</span>
+              </div>
+            </div>
+
+            <!-- Direct Actions -->
+            <div style="margin-top: 0.5rem; display: flex; gap: 1rem;">
+              <a href="mailto:kn1b24.oliinyk@kpnu.edu.ua" class="btn btn-primary" style="flex: 1;">
+                <span>✉️ Написати на Email</span>
+              </a>
+              <button class="btn btn-secondary trigger-print-cv" title="Print/Export CV">
+                <span>🖨️ Друк CV</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form Mockup -->
+          <div class="contact-form-wrap">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-name" data-i18n="formNameLabel">Ваше ім'я</label>
+                <input type="text" id="form-name" class="form-input" required data-i18n-placeholder="formNamePlaceholder" placeholder="Олександр / Анна">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email" data-i18n="formEmailLabel">Ваш Email</label>
+                <input type="email" id="form-email" class="form-input" required data-i18n-placeholder="formEmailPlaceholder" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message" data-i18n="formMsgLabel">Ваше повідомлення</label>
+                <textarea id="form-message" class="form-textarea" required data-i18n-placeholder="formMsgPlaceholder" placeholder="Привіт! Зацікавив твій проєкт..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" data-i18n="btnSendMsg">Надіслати повідомлення</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copy">
+          © 2026 Костянтин Олійник (Kostiantyn Oliinyk). <span data-i18n="footerRights">Всі права захищено.</span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#about" data-i18n="footerBackToTop">Вгору ↑</a></li>
+          <li><a href="#philosophy" data-i18n="navPhilosophy">Філософія</a></li>
+          <li><a href="#projects" data-i18n="navProjects">Проєкти</a></li>
+          <li><a href="mailto:kn1b24.oliinyk@kpnu.edu.ua">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- INTERACTIVE MINESWEEPER MODAL -->
+  <div id="minesweeper-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="ms-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="ms-title" class="modal-title">
+          <span>💣</span>
+          <span data-i18n="msModalTitle">Гра «Сапер» (Інтерактивне демо)</span>
+        </h3>
+        <button id="btn-close-ms-modal" class="modal-close" aria-label="Закрити">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="game-stats">
+          <div class="game-stat-box">
+            <span data-i18n="msRemainingMines">Міни:</span>
+            <span id="ms-mines-count">10</span>
+          </div>
+          <button id="ms-reset-btn" class="btn-control" style="font-size: 1.25rem; padding: 0.2rem 0.6rem;">
+            <span id="ms-reset-face">😊</span>
+          </button>
+          <div class="game-stat-box">
+            <span data-i18n="msTimer">Час:</span>
+            <span id="ms-timer">000</span>
+          </div>
+        </div>
+
+        <div id="ms-message" class="game-message"></div>
+
+        <!-- 8x8 Minesweeper Grid -->
+        <div id="ms-board" class="minesweeper-board"></div>
+
+        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+          <p>💡 Клік лівою кнопкою — відкрити клітинку. Правий клік — прапорець 🚩.</p>
+          <p>Перший клік завжди безпечний завдяки динамічному алгоритму генерації.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
