@@ -127,7 +127,7 @@ const translations = {
     eduPeriod: "2024 — теперішній час",
     eduUni: "Кам'янець-Подільський національний університет імені Івана Огієнка (КПНУ)",
     eduDegree: "Бакалавр, спеціальність 122 «Комп'ютерні науки»",
-    eduDesc: "Поглиблене вивчення алгоритмів, структур даних, об'єктно-орієнтованого програмування, гібридних мобільних додатків, реляційних баз даних та системного проєктування програмного забезпечення.",
+    eduDesc: "Цікавлюсь розробкою гібридних мобільних додатків, та розробкою баз даних мовою SQL",
 
     // Contact Section
     contactBadge: "Контакти",
@@ -280,7 +280,7 @@ const translations = {
     eduPeriod: "2024 — Present",
     eduUni: "Kamianets-Podilskyi Ivan Ohiienko National University (KPNU)",
     eduDegree: "Bachelor's Degree in Computer Science (Specialty 122)",
-    eduDesc: "Intensive coursework in algorithms, data structures, object-oriented programming, hybrid mobile applications, relational databases, and software engineering principles.",
+    eduDesc: "Interested in hybrid mobile application development and database engineering with SQL.",
 
     // Contact Section
     contactBadge: "Get In Touch",
