@@ -20,6 +20,11 @@
   - Бездоганне відображення на мобільних телефонах, планшетах, ноутбуках і 4K-моніторах.
 - ⚡ **Zero-Dependencies**:
   - Працює автономно без необхідності встановлювати Node.js або зовнішні пакети. Достатньо просто відкрити `index.html` у будь-якому браузері!
+- 🔍 **Повна SEO-оптимізація та Open Graph**:
+  - Метатеги для пошукових систем (Google, Bing).
+  - Open Graph & Twitter Cards прев'ю-зображення (`og-image.png`, 1200x630) для гарного шерингу в Telegram, LinkedIn, Facebook, Discord.
+  - Структуровані дані Schema.org (`Person`).
+  - Файли `sitemap.xml` та `robots.txt` для індексації пошуковими роботами.
 
 ---
 
@@ -30,9 +35,13 @@
 ├── 404.html            # Стилізована сторінка помилки 404
 ├── CNAME               # Прив'язка власного домену kostia-oliinyk.itkamianets.com
 ├── favicon.ico         # Фавіконка сайту для вкладок браузера
+├── robots.txt          # Інструкції для пошукових роботів
+├── sitemap.xml         # Карта сайту для індексації в пошуковиках
 ├── img/
 │   ├── favicon.png     # Високоякісна PNG-фавіконка (1024x1024)
-│   └── apple-touch-icon.png
+│   ├── apple-touch-icon.png
+│   ├── og-image.png    # 1200x630 SEO / Open Graph банер для соцмереж
+│   └── seo-image.png
 ├── css/
 │   └── style.css       # Оформлення, темна/світла теми, анімації, сітки Grid/Flexbox та @media print
 ├── js/
