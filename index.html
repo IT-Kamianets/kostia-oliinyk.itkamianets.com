@@ -13,6 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -407,7 +412,7 @@
                 <span class="tech-tag">Game Logic</span>
               </div>
               <div class="project-actions">
-                <button id="btn-open-minesweeper" class="btn btn-primary btn-sm" data-i18n="btnPlayDemo">Зіграти в Сапера</button>
+                <a href="#contact" class="btn btn-secondary btn-sm" data-i18n="btnViewDetails">Деталі архітектури</a>
               </div>
             </div>
           </div>
@@ -597,45 +602,6 @@
 
   <!-- TOAST NOTIFICATION -->
   <div id="toast" class="toast" role="alert" aria-live="polite"></div>
-
-  <!-- INTERACTIVE MINESWEEPER MODAL -->
-  <div id="minesweeper-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="ms-title">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 id="ms-title" class="modal-title">
-          <span>💣</span>
-          <span data-i18n="msModalTitle">Гра «Сапер» (Інтерактивне демо)</span>
-        </h3>
-        <button id="btn-close-ms-modal" class="modal-close" aria-label="Закрити">&times;</button>
-      </div>
-
-      <div class="modal-body">
-        <div class="game-stats">
-          <div class="game-stat-box">
-            <span data-i18n="msRemainingMines">Міни:</span>
-            <span id="ms-mines-count">10</span>
-          </div>
-          <button id="ms-reset-btn" class="btn-control" style="font-size: 1.25rem; padding: 0.2rem 0.6rem;">
-            <span id="ms-reset-face">😊</span>
-          </button>
-          <div class="game-stat-box">
-            <span data-i18n="msTimer">Час:</span>
-            <span id="ms-timer">000</span>
-          </div>
-        </div>
-
-        <div id="ms-message" class="game-message"></div>
-
-        <!-- 8x8 Minesweeper Grid -->
-        <div id="ms-board" class="minesweeper-board"></div>
-
-        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">
-          <p>💡 Клік лівою кнопкою — відкрити клітинку. Правий клік — прапорець 🚩.</p>
-          <p>Перший клік завжди безпечний завдяки динамічному алгоритму генерації.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Main JavaScript File -->
   <script src="js/main.js"></script>
