@@ -424,10 +424,9 @@ a {
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.25fr 0.95fr;
-  align-items: center;
-  gap: 3.5rem;
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .hero-content {
@@ -1539,15 +1538,6 @@ section {
 
 /* Responsive Breakpoints */
 @media (max-width: 992px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .hero-visual {
-    order: -1;
-  }
-
   .contact-grid {
     grid-template-columns: 1fr;
   }
